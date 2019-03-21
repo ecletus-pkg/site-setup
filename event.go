@@ -1,8 +1,8 @@
 package site_setup
 
 import (
-	"github.com/aghape/core"
-	"github.com/aghape/plug"
+	"github.com/ecletus/core"
+	"github.com/ecletus/plug"
 	"github.com/spf13/cobra"
 )
 

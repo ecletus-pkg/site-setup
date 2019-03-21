@@ -1,2 +1,2 @@
 # site-setup
-Site Setup plugin for Aghape Framework
+Site Setup plugin for Ecletus Framework
