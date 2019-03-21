@@ -18,7 +18,7 @@ type SiteSetupEvent struct {
 }
 
 func OnSetup(dis plug.EventDispatcherInterface, cb func(e *SiteSetupEvent) error) {
-	dis.OnE(E_SETUP, func(e plug.EventInterface) error {
+	_ = dis.OnE(E_SETUP, func(e plug.EventInterface) error {
 		return cb(e.(*SiteSetupEvent))
 	})
 }

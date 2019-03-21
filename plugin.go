@@ -35,7 +35,7 @@ func (p *Plugin) OnRegister() {
 			dis         = e.PluginDispatcher()
 		)
 		setupCmd = cmd.Sites(&cobra.Command{
-			Use:   "siteSetup",
+			Use:   "site-setup",
 			Short: "Configure site for first use",
 		}, func(cmd *cobra.Command, site core.SiteInterface, args []string) error {
 			log.Infof("Configure site %q:", site.Name())
