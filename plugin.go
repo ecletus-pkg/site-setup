@@ -5,9 +5,9 @@ import (
 	"github.com/ecletus/core"
 	"github.com/ecletus/plug"
 	"github.com/ecletus/sites"
-	"github.com/moisespsena/go-default-logger"
+	"github.com/moisespsena-go/default-logger"
 	"github.com/moisespsena/go-error-wrap"
-	"github.com/moisespsena/go-path-helpers"
+	"github.com/moisespsena-go/path-helpers"
 	"github.com/spf13/cobra"
 )
 
