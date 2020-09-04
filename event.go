@@ -13,7 +13,7 @@ var (
 
 type SiteSetupEvent struct {
 	plug.PluginEventInterface
-	Site     core.SiteInterface
+	Site     *core.Site
 	SetupCMD *cobra.Command
 }
 
@@ -29,6 +29,6 @@ func OnRegister(dis plug.EventDispatcherInterface, cb func(e *SiteSetupEvent)) {
 	})
 }
 
-func Trigger(dis plug.PluginEventDispatcherInterface, eventName string, site core.SiteInterface, cmd *cobra.Command) error {
+func Trigger(dis plug.PluginEventDispatcherInterface, eventName string, site *core.Site, cmd *cobra.Command) error {
 	return dis.TriggerPlugins(&SiteSetupEvent{plug.NewPluginEvent(eventName), site, cmd})
 }
